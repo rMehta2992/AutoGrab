@@ -1,0 +1,105 @@
+.form-page {
+  padding: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  clip-path: inset(50%);
+}
+
+.make-control select,
+.vehicle-fields select {
+  box-sizing: border-box;
+  display: block;
+  width: 120px;
+}
+
+.vehicle-picker {
+  margin-top: 1rem;
+}
+
+.quick-selections button {
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.vehicle-fields {
+  margin-top: 0.25rem;
+}
+
+.vehicle-fields label {
+  display: block;
+  margin: 0;
+}
+
+.vehicle-fields label + label {
+  margin-top: 0.25rem;
+}
+
+.upload-section {
+  margin-top: 1.25rem;
+  padding-top: 0.75rem;
+}
+
+.upload-section h2 {
+  margin: 0 0 0.5rem;
+  font-size: 1.1rem;
+}
+
+.upload-section input[type="file"] {
+  display: block;
+}
+
+.upload-section button[type="submit"] {
+  display: block;
+  margin-top: 0.5rem;
+}
+
+
+.submission-result {
+  max-width: 42rem;
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background: #f5f7f9;
+}
+
+.submission-result h2 {
+  margin: 0 0 0.5rem;
+}
+
+.submission-result > p[role="status"] {
+  margin: 0 0 1rem;
+  color: #24633d;
+}
+
+.vehicle-summary {
+  display: grid;
+  grid-template-columns: 5rem minmax(0, 1fr);
+  gap: 0.35rem 0.75rem;
+  margin: 0;
+}
+
+.vehicle-summary dd {
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+
+.submission-result h3 {
+  margin: 1.25rem 0 0.5rem;
+}
+
+.submission-result pre {
+  max-height: 20rem;
+  margin: 0;
+  padding: 0.75rem;
+  overflow: auto;
+  background: #fff;
+  font: 0.9rem/1.5 ui-monospace, SFMono-Regular, Menlo, monospace;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}

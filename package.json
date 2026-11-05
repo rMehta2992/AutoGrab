@@ -1,0 +1,24 @@
+{
+  "name": "vehicle-selection",
+  "private": true,
+  "workspaces": [
+    "apps/api",
+    "apps/frontend"
+  ],
+  "engines": {
+    "node": ">=20.19"
+  },
+  "scripts": {
+    "dev": "concurrently -k -n api,frontend -c blue,green \"npm --prefix apps/api run dev\" \"npm --prefix apps/frontend run dev\"",
+    "build": "npm --prefix apps/api run build && npm --prefix apps/frontend run build",
+    "check": "npm --prefix apps/api run check && npm --prefix apps/frontend run check",
+    "test": "npm run test:unit && npm run test:e2e",
+    "test:unit": "npm --prefix apps/api test",
+    "test:e2e": "playwright test"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.30",
+    "@playwright/test": "^1.52.0",
+    "concurrently": "^9.1.2"
+  }
+}
